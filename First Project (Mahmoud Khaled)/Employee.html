@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link href="css/Employee.css" rel="stylesheet" />
+    <style>
+</style>
+</head>
+<body>
+    <h1>Employee <i class="fa fa-users"></i></h1>
+    <div class="container col-12">
+        <div class="row col-12">
+            <div class="col-4 mr-4">
+                <p id="name"></p>
+                <img src="employee.jpg" />
+            </div>
+            <div id="tabs" class="offset-1 col-6" >
+                <ul>
+                    <li><a href="#Monthly">Monthly Report</a></li>
+                    <li><a href="#Daily">Daily Report</a></li>
+                </ul>
+                <div id="Monthly">
+                    <h3>Monthly</h3>
+                    <label>Attendance Times:</label><span id="AttendanceTimes"></span><br>
+                    <label>Late Times:</label><span id="LateTimes"></span><br>
+                    <label>Absence Times:</label><span id="AbsenceTimes"></span><br>
+                </div>
+                <div id="Daily">
+                    <h3>Daily</h3>
+                    <label>Attendance Time:</label><span id="Time"></span><br>
+                    <label>Late:</label><span id="Late"></span><br>
+                    <label>Absence:</label><span id="Absence"></span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  id="attendaces" >
+        <input id="attendacesbtn" type="button"class="btn btn-warning " disabled value="Attendaces" title="You Should be Sub Admin To use It"/>
+    </div>
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="js/Employee.js"></script>
+</body>
+</html>

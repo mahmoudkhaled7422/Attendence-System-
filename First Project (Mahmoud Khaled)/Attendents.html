@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendace</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/Attendents.css" rel="stylesheet" />
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Attendance Sheet <i class="fa fa-pencil "></i></h1>
+    <div id="confirm" class="container">
+        <div  class="row col-12">
+            <label class="col-4 bg-light">User Name:</label><input type="text" class="col-7" id="usernamevalue" required title="Please Enter Your UserName"/>
+        </div>
+        <div class="col-6 offset-3">
+        <input type="button" class="btn btn-info" value="Confirm Attendace" id="show"/>
+            </div>
+    </div>
+    <div id="details" class="container"style="display: none;">
+            <label>Employee Name:</label><span id="username"></span><br>
+            <label>Attendace Time:</label><span id="time"></span><br>
+            <input type="button" class="btn btn-info" value="close" id="close"/>
+    </div>
+    <p id="p"></p>
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Attendents.js"></script>
+</body>
+</html>

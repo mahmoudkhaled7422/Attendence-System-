@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/Home.css" rel="stylesheet"/>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Content Home -->
+        <div class="inputs">
+             <input type="button" value="Login" class="btn btn-success" data-toggle="modal" data-target="#Login" />
+             <input type="button" value="Register" class="btn btn-primary" data-toggle="modal" data-target="#Register" />
+         </div>
+        <!-- Modal Of Register -->
+        <div class="modal" id="Register">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Register</p>
+                    </div>
+                    <div class="modal-body">
+                        <form method="get" class="form-inline  was-validated" id="registerform" >
+                            <div class="input-group mb-2">
+                                <span class="input-group-prepend "><i class="input-group-text fa fa-user fa-2x"></i></span>
+                                <input id="FirstName" type="text" class="form-control mr-2" placeholder="First Name" required />
+                                <div class="valid-feedback">
+                                    Valid First Name
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please Enter Valid First Name
+                                </div>
+                            </div>
+                            <div class="input-group mb-2">
+                                <span class="input-group-prepend "><i class="input-group-text fa fa-user fa-2x"></i></span>
+                                <input id="LastName" type="text" class="form-control mr-2"  placeholder="Last Name" required  />
+                                <div class="valid-feedback">
+                                    Valid First Name
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please Enter Valid First Name
+                                </div>
+                            </div>
+                            <div class="input-group mb-2">
+                                <span class="input-group-append"><i class=" input-group-text fa fa-home fa-2x"></i></span>
+                                <input id="Address" type="text" class="form-control mr-2"  placeholder="Address" required />
+                                <div class="valid-feedback">
+                                    Valid Address
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please Enter Valid Address
+                                </div>
+                            </div>
+                            <div class="input-group mb-2">
+                                <span class="input-group-append"><i class=" input-group-text fa fa-envelope  fa-2x"></i></span>
+                                <input id="Email" type="email" class="form-control mr-2"  placeholder="Email" required />
+                                <div class="valid-feedback">
+                                    Valid Email
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please Enter Valid Email
+                                </div>
+                            </div>
+                            <div class="input-group mb-2">
+                                <span class="input-group-append"><i class=" input-group-text fa fa-birthday-cake fa-2x"></i></span>
+                                <input id="Age" type="number" min="18" max="80" class="form-control mr-2"  placeholder="Age" required />
+                            </div>
+                            <div>
+                                <input id="submitRegister" type="button" class="btn btn-primary mb-2"  data-dismiss="modal" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Of login -->
+        <div class="modal" id="Login">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Login</p>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" class="form-inline" id="loginform">
+                            <div class="input-group mb-2">
+                                <span class="input-group-prepend "><i class="input-group-text fa fa-user fa-2x"></i></span>
+                                <input id="username" type="text" class="form-control mr-2" placeholder="User Name" required />
+                            </div>
+                            <div class="input-group mb-2">
+                                <span class="input-group-append"><i class=" input-group-text fa fa-lock fa-2x"></i></span>
+                                <input id="password" type="password" class="form-control mr-2" placeholder="Password" required />
+                            </div>
+                            <div>
+                                <input id="submitLogin" type="button" class="btn btn-primary mb-2 " value="Login" data-dismiss="modal"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<script src="js/JQuery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/Home.js"></script>
+</body>
+</html>

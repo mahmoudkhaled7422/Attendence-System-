@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link href="css/Admin.css" rel="stylesheet" />
+<style>
+</style>
+</head>
+<body>
+<div class="container" id="container">
+    <h1>Admin Panal <i class="fa fa-user"></i></h1>
+    <div class="row offset-5 mt-1">
+        <input type="button" class="btn btn-success" value="Requests" id="requests"/>
+    </div>
+    <div id="tablecontainer" >
+        <div id="tabs">
+            <ul>
+                <li><a href="#allemp">All Employees</a></li>
+                <li><a href="#fullreport">Full Report</a></li>
+                <li><a href="#Latereport">Late Report</a></li>
+                <li><a href="#Absencereport">Absence Report</a></li>
+            </ul>
+            <div id="allemp" class="table-responsive">
+                <table id="allemptbl"class="table table-bordered table-hover">
+                    <thead>
+                        <td>UserName</td>
+                        <td>Password</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Address</td>
+                        <td>Email</td>
+                        <td>Age</td>
+                    </thead>
+                </table>
+            </div>
+            <div id="fullreport" class="table-responsive">
+                <table id="fullreporttbl" class="table d-md-table table-bordered table-hover">
+                    <thead>
+                        <td>Employee Name</td>
+                        <td>AttendanceTimes</td>
+                        <td>Late</td>
+                        <td>Absence</td>
+                    </thead>
+                </table>
+            </div>
+            <div id="Latereport" class="table-responsive">
+                <table id="Latereporttbl" class="table d-md-table table-bordered table-hover">
+                    <thead>
+                        <td>Employee Name</td>
+                        <td>Late Times</td>
+                    </thead>
+                </table>
+            </div>
+            <div id="Absencereport" class="table-responsive">
+                <table id="Absencereporttbl" class="table d-md-table table-bordered table-hover">
+                    <thead>
+                        <td>Employee Name</td>
+                        <td>Absence Times</td>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/JQuery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="js/Admin.js"></script>
+</html>

@@ -1,0 +1,40 @@
+#confirm,#details
+{
+    width:490px;
+    height:200px;
+    margin:10px auto;
+    padding:30px;
+    background-color:rgb(255, 81, 0);
+    border: 2px solid red;
+    text-align: center;
+}
+
+input[type="text"],input[type="time"]
+{
+    padding:5px;
+    margin-bottom:20px;
+    margin-left:10px;
+    border:2px solid lightgreen;
+    border-radius:5%;
+}
+#confirm label
+{
+    width:500px;
+    height:30px;
+}
+h1
+{
+    margin:10px auto;
+    text-align: center;
+}
+
+#details label
+{
+    font-size: large;
+    font-weight: bold;
+    padding:5px;
+}
+#details span
+{
+    color: white;
+}
